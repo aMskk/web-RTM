@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Web RTM</title>
+    <link href= "style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="notification-container"></div>
+    <header>
+        <h1>Web RTM (BETA) v1.0</h1>
+        <a href="https://discord.com" target="_blank" class="discord-btn" title="Join us on Discord">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord"/>
+        </a>
+    </header>
+
+    <div class="sidebar">
+        <img src="https://i.gifer.com/GZdp.gif" alt="Avatar" class="avatar" id="avatar" />
+        <div id="username" class="Username">Username</div>
+        <h5 id="cpursx">//</h5>
+        <!-- <br><div id="cpursx" class="Username">Temp</div>-->
+        <div class="sidebar-buttons">
+           <!-- <button class="sidebar-button">Dashboard</button> -->
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="main-content">
+            <div class="text1">Welcome to Web RTM for Minecraft PS3</div>
+            <div class="text1">NOTE: you need to have WebMAN MOD 1.47.45</div>
+
+            <div class="container">
+                <div class="card">
+                    <div class="card-title">Connect to PS3</div>
+                    <input type="text" id="ipInput" placeholder="192.168.1.18" />
+                    <button id="connectBtn">Connect</button>
+                    <button id="disconnectBtn">Disconnect</button>
+                    <button id="reloadBtn">Reload game</button>
+                    <button id="exitBtn">Exit game</button>
+                </div>
+
+                <div class="card">
+                <div class="card-title">Host Options</div>
+                    <label class="tooltip"><input type="checkbox" id="godmode"/>God Mode<span class="tooltiptext">Be invincible</span></label>
+                    <label class="tooltip"><input type="checkbox" id="demigodmode"/>Demi God Mode<span class="tooltiptext">Be invincible using totem</span></label>
+                    <label class="tooltip"><input type="checkbox" id="instantdamage"/>Instant Damage<span class="tooltiptext">Fast attack any entity</span></label>
+                    <label class="tooltip"><input type="checkbox" id="knockback"/>Knockback<span class="tooltiptext">no comment for this options</span></label>
+                    <label class="tooltip"><input type="checkbox" id="antiknockback"/>Anti-Knockback<span class="tooltiptext">no comment for this options</span></label>
+                    <label class="tooltip"><input type="checkbox" id="instantkill"/>Instant Kill<span class="tooltiptext">no comment for this options</span></label>
+                    <label class="tooltip"><input type="checkbox" id="infinitepickup"/>Infinite Pickup Items<span class="tooltiptext">no comment for this options</span></label>
+                    <label class="tooltip"><input type="checkbox" id="spambow"/>Spam Bow<span class="tooltiptext">no comment for this options</span></label>
+                </div>
+
+                <div class="card">
+                <div class="card-title">Non-Host Options</div>
+                    <p>NOT YET</p>
+                </div>
+
+                <div class="card">
+                <div class="card-title">Movement Options</div>
+                    <label><input type="checkbox" id="superspeed" />Super Speed</label>
+                    <label><input type="checkbox" id="superjump" />Super Jump</label>
+                    <label><input type="checkbox" id="multijump" />Multi Jump</label>
+                    <label><input type="checkbox" id="noslowdown" />No Slowdown</label>
+                    <label><input type="checkbox" id="swimfly" />Swim Fly</label>
+                    <label><input type="checkbox" id="jumpforward" />Jump Forward</label>
+                    <label><input type="checkbox" id="novelocity" />No velocity</label>
+                    <label><input type="checkbox" id="noweb" />No Web</label>
+                    <label><input type="checkbox" id="nocolission" />No Colission</label>
+                </div>
+
+                <div class="card">
+                <div class="card-title">Combat Options</div>
+                    <label class="tooltip"><input type="checkbox" id="reachattack"/>Reach Attack<span class="tooltiptext">Attack a entity with a bigger reach</span></label>
+                    <label class="tooltip"><input type="checkbox" id="killaura"/>Kill Aura<span class="tooltiptext">Make a bigger hitbox</span></label>
+                    <label class="tooltip"><input type="checkbox" id="fasthit"/>Fast Hit<span class="tooltiptext">You can attack very fast</span></label>
+                </div>
+
+                <div class="card">
+                <div class="card-title">Visual Options</div>
+                    <label class="tooltip"><input type="checkbox" id="renderhitbox"/>Render Hitbox<span class="tooltiptext">Can see every hitbox from entity</span></label>
+                    <label class="tooltip"><input type="checkbox" id="nameoverhead"/>Name Over Head<span class="tooltiptext">Can see name from entity</span></label>
+                </div>
+
+                <div class="card">
+                <div class="card-title">Mics Options</div>
+                    <label class="tooltip"><input type="checkbox" id="fofbypass"/>FOF Bypass<span class="tooltiptext">Bypass friends of friends so you can join the world</span></label>
+                    <label class="tooltip"><input type="checkbox" id="dlcfree"/>DLC Free<span class="tooltiptext">Make every DLC unlocked (skins, maps, mashup)</span></label>
+                </div>
+
+                <div class="card">
+                <div class="card-title">Battle Options</div>
+                    <label><input type="checkbox" id="bypassxml" />Bypass XML</label>
+                </div>
+
+                <div class="card">
+                <div class="card-title">Name Changer</div>
+                    <input type="text" id="nameInput" placeholder="your new name" />
+                    <button id="setnameBtn">Set name</button>
+                </div>
+
+                <div class="card">
+                <div class="card-title">Settings</div>
+                    <button id="setthemecolorBtn">Change theme color</button>
+                </div>
+            </div>
+
+            <footer>Made by amsk ❤️</footer>
+        </div>
+    </div>
+</body>
+<body oncontextmenu="return false;"></body>
+</html>
+    <script src="PS3Lib.js"></script>
+    <script src="src.js"></script>
+</body>
+</html>
